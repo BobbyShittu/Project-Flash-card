@@ -45,7 +45,7 @@ class AddCard extends Component {
         else {
             this.props.addCard(name, data)
             let newLength = length + 1
-            this.props.navigation.navigate('DeckDetail', { name: name, length: newLength })
+            this.props.navigation.goBack()
             Keyboard.dismiss()
         }
      
